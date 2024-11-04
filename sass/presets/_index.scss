@@ -60,20 +60,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .img1 {
+        max-width: 300px;
+        height: auto;
+    }
+    .img2 {
+        width: 400px;
+        max-height: auto;
+    }
+    .img3 {
+        width: 300px;
+        max-height: 300px;
+    }
 }
 .gridNaruto {
     display: grid;
     grid-template-columns: 300px 400px 300px
-}
-.gridNaruto .img1 {
-    max-width: 300px;
-    height: auto;
-}
-.gridNaruto .img2 {
-    width: 400px;
-    max-height: auto;
-}
-.gridNaruto .img3 {
-    width: 300px;
-    max-height: 300px;
 }
