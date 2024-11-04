@@ -1,0 +1,134 @@
+/*Responsive banner e img index Naruto*/
+@media (max-width: 1650px) {
+    .banner-img {
+        width: 100%; /*banner ocupa todo el ancho*/
+        height: auto; /*mantiene la proporción*/
+        position: absolute; /*mover la imagen dentro del banner*/
+        top: -170px; /*este valor me permite recortar el banner por arriba*/
+        left: 50%; /*Centra horizontalmente*/
+        transform: translateX(-50%); /*Ajusta el centrado*/
+        object-fit: cover; /*Asegura que la imagen se ajuste bien*/
+    }
+}
+@media (max-width: 1300px) {
+    .banner-img {
+        width: 100%; /*banner ocupa todo el ancho*/
+        height: auto; /*mantiene la proporción*/
+        position: absolute; /*mover la imagen dentro del banner*/
+        top: -100px; /*este valor me permite recortar el banner por arriba*/
+        left: 50%; /*Centra horizontalmente*/
+        transform: translateX(-50%); /*Ajusta el centrado*/
+        object-fit: cover; /*Asegura que la imagen se ajuste bien*/
+    }
+}
+@media (max-width: 750px) {
+    .banner-img {
+        width: 100%; /*banner ocupa todo el ancho*/
+        height: auto; /*mantiene la proporción*/
+        position: absolute; /*mover la imagen dentro del banner*/
+        top: -100px; /*este valor me permite recortar el banner por arriba*/
+        left: 50%; /*Centra horizontalmente*/
+        transform: translateX(-50%); /*Ajusta el centrado*/
+        object-fit: cover; /*Asegura que la imagen se ajuste bien*/
+    }
+}
+@media (max-width: 1100px) {
+    .imagen-redonda {
+        position: relative; /* Cambia a relativo para que se mueva con el flujo del documento */
+        top: auto; /* Elimina el desplazamiento vertical */
+        left: 50%; /* Mantiene la posición horizontal */
+        transform: translate(-50%, 0); /* Centra horizontalmente */
+        margin-top: 150px; /* Ajusta para que se coloque por debajo del banner */
+    }
+}
+@media (max-width: 600px) {
+    .imagen-redonda {
+        position: relative; /* Cambia a relativo para que se mueva con el flujo del documento */
+        top: auto; /* Elimina el desplazamiento vertical */
+        left: 50%; /* Mantiene la posición horizontal */
+        transform: translate(-50%, 0); /* Centra horizontalmente */
+        margin-top: 150px; /* Ajusta para que se coloque por debajo del banner */
+        width: 250px; /*tamaño de la imagen*/
+        height: 250px;
+    }
+}
+
+/*Responsive grilla de index Naruto*/
+@media (max-width: 1000px) {
+    .img2 {
+        display: none;
+    }
+    .gridNaruto {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-areas:
+        "img1 img3"
+    }
+    .gridNaruto .img1 {
+        max-width: 200px;
+        height: auto;
+    }
+    .gridNaruto .img3 {
+        width: 200px;
+        max-height: 200px;
+    }
+}
+@media (max-width: 410px) {
+    .img2 { 
+        display: none;
+    }
+    .gridNaruto {
+        display: grid;
+        grid-template-columns: 150px 150px;
+    }
+    .gridNaruto .img1 {
+        max-width: 150px;
+        height: 150px;
+    }
+    .gridNaruto .img3 {
+        width: 150px;
+        max-height: 150px;
+    }
+}
+
+
+/*RESPONSIVO PREGUNTAS FRECUENTES*/
+@media (max-width: 1550px) { 
+    .faq-container {
+        display: flex;
+        max-width: 1300px;
+        margin: auto;
+    }
+}
+@media (max-width: 1350px) { 
+    .faq-container {
+        display: flex;
+        max-width: 1100px;
+        margin: auto;
+    }
+}
+@media (max-width: 1150px) { 
+    .faq-container {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+    }
+}
+@media (max-width: 950px) {
+    .faq-container {
+        flex-direction: column; /* Cambiar a columna */
+    }
+    .faq-preguntas {
+        order: 1; /* Poner la caja de preguntas en la parte superior */
+        margin-bottom: 20px;
+        margin-left: auto; /* Centrar horizontalmente */
+        margin-right: auto; /* Centrar horizontalmente */
+        max-width: 90%; /* Ancho máximo para que no ocupe toda la pantalla */
+    }
+    .faq-respuestas {
+        order: 2; /* Mantener la caja de respuestas debajo */
+    }
+    .lista-preguntas { 
+        width: 480px;
+    }
+}

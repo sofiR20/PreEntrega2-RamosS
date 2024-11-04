@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+        <title>Contacto y Redes</title>
+    </head>
+
+    <body id="body">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="navbar__logo" src="../images/iconoLogo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacion.html">INFORMACIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">REDES Y CONTACTO</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+    <main><!--MAIN / CONTENIDO EXPLICITO, IMPORTANTE, TODO EL CONTENIDO-->
+        <form class="formulario-contacto" action="">
+            <fieldset class="fieldset-formulario">
+                <legend>
+                    <h1 class="titulo.formulario">Formulario de Contacto:</h1>
+                </legend>
+                <input class="input-formulario" type="text" placeholder="Nombre" required>
+                <input class="input-formulario" type="text" placeholder="Apellido" required>
+                <input class="input-formulario" type="email" placeholder="E-mail" required>
+                <input class="input-formulario" type="text" placeholder="Usuario de Instagram" required>
+                <input class="input-formulario" type="text" placeholder="Número de celular" required>
+                
+                <h3>Producto de tu interés:</h3>
+                <select class="select-producto" name="Tipos" id="productos">
+                    <option value="Todos los productos">Todos los productos</option>
+                    <option value="Fundas de celular">Fundas de celular</option>
+                    <option value="Cuadros de vidrio">Cuadros de vidrio</option>
+                    <option value="Llaveros">Llaveros</option>
+                    <option value="Indumentaria">Indumentaria</option>
+                </select>
+                
+                <div class="boton-container">
+                    <input class="boton-formulario" type="reset" value="Cancelar">
+                    <input class="boton-formulario" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+        <div class="informacion-derecha">
+        <h1>¡Me ayudarías muchísimo apoyando mis perfiles en redes sociales!🧡</h1>
+        <ul>
+            <li>INSTAGRAM: <a href="https://www.instagram.com/kurama_painting/" target="_blank">@kurama_painting</a></li>
+            <li>WHATSAPP: <a href="https://wa.me/message/QO4HAU43HOBKF1">11-2319-9001</a></li>
+            <li>FACEBOOK: <a href="https://www.facebook.com/profile.php?id=61560725290767&mibextid=ZbWKwL">Kurama Painting</a></li>
+            <li>TIKTOK: <a href="https://www.tiktok.com/@kurama_painting?_t=8pzwXivMLjh&_r=1">@kurama_painting</a></li>
+        </ul>
+        <h1>🍥¡Y escucha uno de los mejores openings!🍥</h1>
+        <h3>En este anime se basa KURAMA PAINTING.</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2upuBiEiXDk?si=Uf-QIQ54W9HEgiqW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </main>
+
+    <footer id="footer"><!--FOOTER pie de pagina, contacto, redes-->
+        <section class="inicio">
+            <ul>
+                <li><a href="../index.html">VOLVER AL INICIO</a></li>
+            </ul>
+        </section>
+        <section class="email"><p>kurama.painting@gmail.com</p></section>
+        <section class="copyright"><p>&copy; 2025 - Creado por Sofía Ramos.</p></section>
+        <section class="iconsFooter">
+            <a href="https://www.instagram.com/kurama_painting/"><img src="../images/logoIg.png" class="logoIg"></a>
+            <a href="https://wa.me/message/QO4HAU43HOBKF1"><img src="../images/logoWsp.png" class="logoWsp"></a>
+            <a href="https://www.tiktok.com/@kurama_painting?_t=8pzwXivMLjh&_r=1"><img src="../images/logoTiktok.png" class="logoTiktok"></a>
+            <a href="https://www.facebook.com/profile.php?id=61560725290767&mibextid=ZbWKwL"><img src="../images/logoFb.png" class="logoFb"></a>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
