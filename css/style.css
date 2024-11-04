@@ -37,40 +37,38 @@
 /*MAIN PRODUCTOS*/
 .productosGrid {
   display: grid;
-  grid-template-columns: repeat(3, 400px); /* 3 columnas del mismo tamaño */
-  grid-template-rows: 600px 400px; /* 2 filas automáticas */
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 600px 400px;
   grid-template-areas: "imgFun . imgCua" "imgInd imgLla imgLla";
-  gap: 15px; /* Espacio entre elementos */
+  gap: 15px;
   justify-content: center;
   margin-top: 100px;
   position: relative;
 }
-
-.imgFun {
+.productosGrid .imgFun {
   grid-area: imgFun;
   width: 400px;
   height: 600px;
 }
-
-.imgCua {
+.productosGrid .imgCua {
   grid-area: imgCua;
   width: 400px;
   height: 600px;
 }
-
-.imgInd {
+.productosGrid .imgInd {
   grid-area: imgInd;
   width: 400px;
   height: 400px;
 }
-
-.imgLla {
+.productosGrid .imgLla {
   grid-area: imgLla;
   width: 815px;
   height: 400px;
 }
-
-.imgFun:hover, .imgCua:hover, .imgLla:hover, .imgInd:hover {
+.productosGrid .imgFun:hover,
+.productosGrid .imgCua:hover,
+.productosGrid .imgLla:hover,
+.productosGrid .imgInd:hover {
   box-shadow: 10px 10px rgb(255, 123, 0);
   transition: 1s;
 }
@@ -87,107 +85,90 @@
 }
 
 .faq-container {
-  display: flex; /* Usar flexbox para organizar columnas */
-  max-width: 1500px; /* Ancho máximo del contenedor */
-  margin: auto; /* Centrar el contenedor en la página */
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
 }
-
-.faq-preguntas {
-  flex: 1; /* Ocupa espacio en la columna izquierda */
-  margin-right: 20px; /* Espacio entre las preguntas y las respuestas */
+.faq-container .faq-preguntas {
+  flex: 1;
+  margin-right: 20px;
 }
-
-.lista-preguntas {
+.faq-container .faq-preguntas .lista-preguntas {
   display: flex;
   text-align: center;
-  flex-direction: column; /* Colocar elementos en columna */
-  gap: 10px; /* Espacio entre filas */
-  padding: 20px; /* Espaciado interno */
-  border: 2px solid #333; /* Borde exterior */
-  border-radius: 5px; /* Bordes redondeados */
-  background-color: white; /* Fondo blanco para el contenedor */
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: white;
 }
-
-.item-pregunta {
-  background-color: #f9f9f9; /* Color de fondo para cada fila */
-  color: #333; /* Color del texto */
-  padding: 15px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Borde interno */
-  border-radius: 3px; /* Bordes redondeados para filas */
-  transition: background-color 0.3s; /* Efecto de transición */
+.faq-container .faq-preguntas .lista-preguntas .item-pregunta {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: background-color 0.3s;
 }
-
-.item-pregunta:hover {
-  background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+.faq-container .faq-preguntas .lista-preguntas .item-pregunta:hover {
+  background-color: #e0e0e0;
 }
-
-.item-pregunta a {
+.faq-container .faq-preguntas .lista-preguntas .item-pregunta a {
   text-decoration: none;
-  color: inherit; /*Heredar color del texto*/
+  color: inherit;
 }
-
-.faq-respuestas {
-  flex: 2; /*Ocupa más espacio en la columna derecha*/
-  padding: 20px; /*Espaciado interno*/
+.faq-container .faq-respuestas {
+  flex: 2;
+  padding: 20px;
 }
-
-.respuesta {
-  margin-bottom: 20px; /*Espacio entre respuestas*/
+.faq-container .faq-respuestas .respuesta {
+  margin-bottom: 20px;
 }
-
-.respuesta p {
-  margin: 5px 0 0; /*Espaciado para el texto de la respuesta*/
+.faq-container .faq-respuestas .respuesta p {
+  margin: 5px 0 0;
 }
 
 /*MAIN REDES Y CONTACTO*/
 /*ESTILOS FORMULARIO*/
 /* Centrar el formulario */
 .formulario-contacto {
-  max-width: 400px; /* Ancho máximo */
-  margin: 20px auto; /* Margen superior de 20px, centrado horizontalmente */
-  padding: 20px; /* Espaciado interno */
-  border: 2px solid rgb(255, 136, 0); /* Marco naranja */
-  border-radius: 12px; /* Bordes redondeados */
-  background-color: #f9f9f9; /* Color de fondo */
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2); /*Sombreado en la parte de abajo y derecha*/
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid rgb(255, 136, 0);
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
 }
-
-/*ESTILOS FIELDSET*/
-.fieldset-formulario {
-  border: none; /* Sin borde */
+.formulario-contacto .fieldset-formulario {
+  border: none;
 }
-
-/*ESTILOS INPUTS Y SELECT*/
-.input-formulario, .select-producto {
-  width: 100%; /* Ancho completo */
-  padding: 10px; /* Espaciado interno */
-  margin-bottom: 15px; /* Espacio entre campos */
-  border: 1px solid #ffb87e; /* Borde */
-  border-radius: 4px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de fuente */
+.formulario-contacto .input-formulario,
+.formulario-contacto .select-producto {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffb87e;
+  border-radius: 4px;
+  font-size: 16px;
 }
-
-/*CONTENEDOR BOTONES*/
-.boton-container {
-  display: flex; /* Alinea los botones */
-  justify-content: flex-end; /* Alinea los botones a la derecha */
+.formulario-contacto .boton-container {
+  display: flex;
+  justify-content: flex-end;
 }
-
-/*ESTILOS BOTONES*/
-.boton-formulario {
+.formulario-contacto .boton-container .boton-formulario {
   background-color: rgb(98, 0, 255);
   color: white;
-  padding: 10px 15px; /* Espaciado interno */
-  border: none; /* Sin borde */
-  border-radius: 20px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  font-size: 16px; /* Tamaño de fuente */
-  margin-left: 10px; /* Espacio entre botones */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
 }
-
-/*PASAR EL MOUSE SOBRE EL BOTON*/
-.boton-formulario:hover {
-  background-color: rgb(144, 97, 219); /* Color de fondo al pasar el ratón */
+.formulario-contacto .boton-container .boton-formulario:hover {
+  background-color: rgb(144, 97, 219);
 }
 
 /*FOOTER*/
@@ -227,6 +208,7 @@
   margin-left: 10px;
 }
 
+/*FONTS, FUENTES, TIPOGRAFÍAS*/
 /*MAIN INDEX-INICIO*/
 #main {
   width: 100%;
@@ -289,25 +271,22 @@
   justify-content: center;
   align-items: center;
 }
-
-.gridNaruto {
-  display: grid;
-  grid-template-columns: 300px 400px 300px;
-}
-
 .gridNaruto .img1 {
   max-width: 300px;
   height: auto;
 }
-
 .gridNaruto .img2 {
   width: 400px;
   max-height: auto;
 }
-
 .gridNaruto .img3 {
   width: 300px;
   max-height: 300px;
+}
+
+.gridNaruto {
+  display: grid;
+  grid-template-columns: 300px 400px 300px;
 }
 
 /*Responsive banner e img index Naruto*/
@@ -440,6 +419,5 @@
     width: 480px;
   }
 }
-/*FONTS, FUENTES, TIPOGRAFÍAS*/
 
 /*# sourceMappingURL=style.css.map */
