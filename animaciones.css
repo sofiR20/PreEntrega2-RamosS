@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to top, rgb(255, 123, 0), rgba(255, 136, 0, 0.884), rgba(150, 0, 196, 0.705), rgba(212, 0, 255, 0.493));
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 20px;
+    flex-direction: column;
+}
+
+.box section {
+    display: flex;
+}
+
+.box div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+
+}
+
+.box1 .caja1 {
+    background-image:linear-gradient(to left, green, blue, red, orange);
+}
+
+.box1 .caja2 {
+    background-image: linear-gradient(to top, green, blue, red, orange);
+}
+
+.box1 .caja3 {
+    background-image: radial-gradient(circle, blue, orange)
+}
+.box1 .caja4{
+    background-image: radial-gradient(ellipse 30px 80px, blue, orange)
+}
+
+/* TRANSFORMACIONES: TRANSLATE*/
+
+.box2 .caja1:hover {
+    /*
+    transform:
+    primer valor= desplazamiento horizontal(ejeX)
+    segundo valor= desplazamiento vertical(ejeY)
+    valores negativos= izquierda/arriba
+    valores positivos= derecha/abajo
+    */
+
+    transform: translate(20px, 50px);
+    transition: 1s;
+}

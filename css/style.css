@@ -223,20 +223,12 @@
   height: 50vh; /*alto deseado*/
   overflow: hidden; /*asegurar que no se salga de los bordes*/
   margin-bottom: 0;
-}
-#main .banner .banner-img {
-  width: 100%; /*banner ocupa todo el ancho*/
-  height: auto; /*mantiene la proporción*/
-  position: absolute; /*mover la imagen dentro del banner*/
-  top: -300px; /*este valor me permite recortar el banner por arriba*/
-  left: 50%; /*Centra horizontalmente*/
-  transform: translateX(-50%); /*Ajusta el centrado*/
-  object-fit: cover; /*Asegura que la imagen se ajuste bien*/
+  background-image: linear-gradient(to top, rgb(255, 102, 0), rgba(111, 0, 255, 0.637));
 }
 #main .banner .imagen-redonda {
   position: absolute; /*permite posicionar la imagen en relación al banner*/
   top: 50%; /*Coloca la imagen en el centro vertical*/
-  left: 15%; /* Coloca la imagen a la altura horizontal deseada*/
+  left: 50%; /* Coloca la imagen a la altura horizontal deseada*/
   transform: translate(-50%, -50%); /* Ajusta la posición para que esté perfectamente centrada */
   width: 300px; /*tamaño de la imagen*/
   height: 300px;
