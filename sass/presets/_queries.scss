@@ -38,7 +38,6 @@
         top: auto; /* Elimina el desplazamiento vertical */
         left: 50%; /* Mantiene la posición horizontal */
         transform: translate(-50%, 0); /* Centra horizontalmente */
-        margin-top: 150px; /* Ajusta para que se coloque por debajo del banner */
     }
 }
 @media (max-width: 600px) {
@@ -47,7 +46,6 @@
         top: auto; /* Elimina el desplazamiento vertical */
         left: 50%; /* Mantiene la posición horizontal */
         transform: translate(-50%, 0); /* Centra horizontalmente */
-        margin-top: 150px; /* Ajusta para que se coloque por debajo del banner */
         width: 250px; /*tamaño de la imagen*/
         height: 250px;
     }
