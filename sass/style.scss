@@ -2,14 +2,15 @@
 
 $color-principal: rgb(255, 123, 0);
 $color-secundario: #a251ff;
-
-
+@import "presets/mixins";
 @import "presets/reset";
 @import "presets/header";
-@import "presets/main";
 @import "presets/footer";
+@import "presets/main";
 @import "presets/index";
 @import "presets/queries";
+
+
 
 
 

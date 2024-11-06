@@ -34,6 +34,43 @@
   text-align: right;
 }
 
+/*FOOTER*/
+#footer {
+  width: 100%;
+  background-color: rgb(255, 123, 0);
+  margin-top: 100px;
+}
+#footer ul li a {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+#footer .email {
+  display: flex;
+  justify-content: center;
+}
+#footer .copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+#footer .iconsFooter {
+  display: flex;
+  justify-content: center;
+}
+#footer .iconsFooter .logoIg, #footer .iconsFooter .logoWsp, #footer .iconsFooter .logoFb {
+  width: 50px;
+}
+#footer .iconsFooter .logoTiktok {
+  width: 70px;
+}
+#footer .iconsFooter .logoWsp {
+  margin-left: 10px;
+}
+
 /*MAIN PRODUCTOS*/
 .productosGrid {
   display: grid;
@@ -45,15 +82,13 @@
   margin-top: 100px;
   position: relative;
 }
-.productosGrid .imgFun {
+.productosGrid .imgFun, .productosGrid .imgCua {
   grid-area: imgFun;
   width: 400px;
   height: 600px;
 }
 .productosGrid .imgCua {
   grid-area: imgCua;
-  width: 400px;
-  height: 600px;
 }
 .productosGrid .imgInd {
   grid-area: imgInd;
@@ -171,43 +206,6 @@
   background-color: rgb(144, 97, 219);
 }
 
-/*FOOTER*/
-#footer {
-  width: 100%;
-  background-color: rgb(255, 123, 0);
-  margin-top: 100px;
-}
-#footer ul li a {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-#footer .email {
-  display: flex;
-  justify-content: center;
-}
-#footer .copyright {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-#footer .iconsFooter {
-  display: flex;
-  justify-content: center;
-}
-#footer .iconsFooter .logoIg, #footer .iconsFooter .logoWsp, #footer .iconsFooter .logoFb {
-  width: 50px;
-}
-#footer .iconsFooter .logoTiktok {
-  width: 70px;
-}
-#footer .iconsFooter .logoWsp {
-  margin-left: 10px;
-}
-
 /*FONTS, FUENTES, TIPOGRAFÍAS*/
 /*MAIN INDEX-INICIO*/
 #main {
@@ -321,7 +319,6 @@
     top: auto; /* Elimina el desplazamiento vertical */
     left: 50%; /* Mantiene la posición horizontal */
     transform: translate(-50%, 0); /* Centra horizontalmente */
-    margin-top: 150px; /* Ajusta para que se coloque por debajo del banner */
   }
 }
 @media (max-width: 600px) {
@@ -330,7 +327,6 @@
     top: auto; /* Elimina el desplazamiento vertical */
     left: 50%; /* Mantiene la posición horizontal */
     transform: translate(-50%, 0); /* Centra horizontalmente */
-    margin-top: 150px; /* Ajusta para que se coloque por debajo del banner */
     width: 250px; /*tamaño de la imagen*/
     height: 250px;
   }
