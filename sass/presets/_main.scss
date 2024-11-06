@@ -19,8 +19,7 @@
 
     .imgCua {
         grid-area: imgCua;
-        width: 400px;
-        height: 600px;
+        @extend .imgFun
     }
 
     .imgInd {
@@ -137,8 +136,7 @@
     }
 
     .boton-container {
-        display: flex; // Alinea los botones
-        justify-content: flex-end; // Alinea los botones a la derecha
+        @include flex;
 
         .boton-formulario {
             background-color: rgb(98, 0, 255);
