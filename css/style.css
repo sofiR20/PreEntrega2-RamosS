@@ -82,13 +82,15 @@
   margin-top: 100px;
   position: relative;
 }
-.productosGrid .imgFun, .productosGrid .imgCua {
+.productosGrid .imgFun:hover, .productosGrid .imgCua:hover {
   grid-area: imgFun;
   width: 400px;
   height: 600px;
+  transform: rotate(30deg);
 }
-.productosGrid .imgCua {
+.productosGrid .imgCua:hover {
   grid-area: imgCua;
+  transform: rotate(-30deg);
 }
 .productosGrid .imgInd {
   grid-area: imgInd;
