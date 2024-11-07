@@ -38,46 +38,48 @@
             </div>
             </nav>
 
-    <main><!--MAIN / CONTENIDO EXPLICITO, IMPORTANTE, TODO EL CONTENIDO-->
-        <form class="formulario-contacto" action="">
-            <fieldset class="fieldset-formulario">
-                <legend>
-                    <h1 class="titulo.formulario">Formulario de Contacto:</h1>
-                </legend>
-                <input class="input-formulario" type="text" placeholder="Nombre" required>
-                <input class="input-formulario" type="text" placeholder="Apellido" required>
-                <input class="input-formulario" type="email" placeholder="E-mail" required>
-                <input class="input-formulario" type="text" placeholder="Usuario de Instagram" required>
-                <input class="input-formulario" type="text" placeholder="Número de celular" required>
-                
-                <h3>Producto de tu interés:</h3>
-                <select class="select-producto" name="Tipos" id="productos">
-                    <option value="Todos los productos">Todos los productos</option>
-                    <option value="Fundas de celular">Fundas de celular</option>
-                    <option value="Cuadros de vidrio">Cuadros de vidrio</option>
-                    <option value="Llaveros">Llaveros</option>
-                    <option value="Indumentaria">Indumentaria</option>
-                </select>
-                
-                <div class="boton-container">
-                    <input class="boton-formulario" type="reset" value="Cancelar">
-                    <input class="boton-formulario" type="submit" value="Enviar">
+            <main id="mainRedes">
+                <!-- Sección del formulario de contacto -->
+                <div class="seccion-contacto">
+                    <form class="formulario-contacto" action="">
+                        <fieldset class="fieldset-formulario">
+                            <legend>
+                                <h1 class="titulo-formulario">Formulario de Contacto</h1>
+                            </legend>
+                            <input class="input-formulario" type="text" placeholder="Nombre" required>
+                            <input class="input-formulario" type="text" placeholder="Apellido" required>
+                            <input class="input-formulario" type="email" placeholder="E-mail" required>
+                            <input class="input-formulario" type="text" placeholder="Usuario de Instagram (opcional)">
+                            <input class="input-formulario" type="text" placeholder="Celular" required>
+                            
+                            <label for="productos" class="label-producto">Producto de tu interés:</label>
+                            <select class="select-producto" name="Tipos" id="productos">
+                                <option value="Todos los productos">Todos los productos</option>
+                                <option value="Fundas de celular">Fundas de celular</option>
+                                <option value="Cuadros de vidrio">Cuadros de vidrio</option>
+                                <option value="Llaveros">Llaveros</option>
+                                <option value="Indumentaria">Indumentaria</option>
+                            </select>
+                            
+                            <div class="boton-container">
+                                <input class="boton-formulario" type="reset" value="Cancelar">
+                                <input class="boton-formulario" type="submit" value="Enviar">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-            </fieldset>
-        </form>
-        <div class="informacion-derecha">
-        <h1>¡Me ayudarías muchísimo apoyando mis perfiles en redes sociales!🧡</h1>
-        <ul>
-            <li>INSTAGRAM: <a href="https://www.instagram.com/kurama_painting/" target="_blank">@kurama_painting</a></li>
-            <li>WHATSAPP: <a href="https://wa.me/message/QO4HAU43HOBKF1">11-2319-9001</a></li>
-            <li>FACEBOOK: <a href="https://www.facebook.com/profile.php?id=61560725290767&mibextid=ZbWKwL">Kurama Painting</a></li>
-            <li>TIKTOK: <a href="https://www.tiktok.com/@kurama_painting?_t=8pzwXivMLjh&_r=1">@kurama_painting</a></li>
-        </ul>
-        <h1>🍥¡Y escucha uno de los mejores openings!🍥</h1>
-        <h3>En este anime se basa KURAMA PAINTING.</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2upuBiEiXDk?si=Uf-QIQ54W9HEgiqW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    </main>
+            
+                <!-- Sección de redes sociales -->
+                <div class="informacion-derecha">
+                    <h2 class="titulo-redes">NUESTRAS REDES</h2>
+                    <ul class="lista-redes">
+                        <li><img src="../images/logoWsp.png" alt="WhatsApp"> <a href="https://wa.me/message/QO4HAU43HOBKF1">Link 💚</a></li>
+                        <li><img src="../images/logoIg.png" alt="Instagram"> <a href="https://www.instagram.com/kurama_painting/">Link 💜</a></li>
+                        <li><img src="../images/logoTiktok.png" alt="TikTok"> <a href="https://www.tiktok.com/@kurama_painting?_t=8pzwXivMLjh&_r=1">Link 🖤</a></li>
+                        <li><img src="../images/logoFb.png" alt="Facebook"> <a href="https://www.facebook.com/profile.php?id=61560725290767&mibextid=ZbWKwL">Link 💙</a></li>
+                    </ul>
+                </div>
+            </main>
 
     <footer id="footer"><!--FOOTER pie de pagina, contacto, redes-->
         <section class="inicio">
