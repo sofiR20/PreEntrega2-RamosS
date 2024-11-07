@@ -167,6 +167,15 @@
 /*MAIN REDES Y CONTACTO*/
 /*ESTILOS FORMULARIO*/
 /* Centrar el formulario */
+/* Estilos generales */
+#mainRedes {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+}
+
 .formulario-contacto {
   max-width: 400px;
   margin: 20px auto;
@@ -204,6 +213,41 @@
 }
 .formulario-contacto .boton-container .boton-formulario:hover {
   background-color: rgb(144, 97, 219);
+}
+
+.informacion-derecha {
+  width: 50%; /* Ampliamos el ancho para que ocupe más espacio */
+  padding-left: 10px;
+}
+
+.titulo-redes {
+  font-size: 40px;
+  font-weight: Georgia;
+  text-align: left; /* Centrar título */
+}
+
+.lista-redes {
+  list-style-type: none;
+  padding: 0;
+}
+.lista-redes li {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+.lista-redes img {
+  width: 100px; /* Hacemos los íconos un poco más grandes */
+  height: 100px;
+  margin-right: 30px;
+}
+.lista-redes a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px; /* Agrandamos el tamaño del texto para destacar */
+}
+.lista-redes a:hover {
+  text-decoration: underline;
 }
 
 /*FONTS, FUENTES, TIPOGRAFÍAS*/
