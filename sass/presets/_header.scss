@@ -4,13 +4,19 @@
     height: 120px;
 }
 #navbarNav {
+    ul {
+        li {
+            a{
+                color: white;
+                text-align: left;
+                
+            }
+        }
+    }
     font-family: "Bebas Neue";
     font-size: 40px;
 }
 .navbar {
     background-color: $color-principal;
     color: $color-principal;
-}
-.nav-item {
-    text-align: right;
 }

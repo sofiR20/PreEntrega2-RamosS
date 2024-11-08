@@ -24,14 +24,14 @@
   font-family: "Bebas Neue";
   font-size: 40px;
 }
+#navbarNav ul li a {
+  color: white;
+  text-align: left;
+}
 
 .navbar {
   background-color: rgb(255, 123, 0);
   color: rgb(255, 123, 0);
-}
-
-.nav-item {
-  text-align: right;
 }
 
 /*FOOTER*/
