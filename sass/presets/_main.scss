@@ -204,24 +204,8 @@
 }
 
 
-/* Sección de Productos en Grilla */
+/* Sección de Informacion en Grilla */
 
-
-
-
-.productosGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 400px); // 3 columnas del mismo tamaño
-    grid-template-rows: 600px 400px; // 2 filas automáticas
-    grid-template-areas: 
-        "imgFun . imgCua"
-        "imgInd imgLla imgLla";
-    gap: 15px; // Espacio entre elementos
-    justify-content: center;
-    margin-top: 100px;
-    position: relative;
-
-}
 .imagenes-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -233,19 +217,25 @@
 
 /* Estilos para las imágenes */
 .imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    @include medidainfo;
     border-radius: 5px;
 }
 
 /* Estilos específicos para las imágenes más grandes */
-.grande {
+.imgGrande {
+    @include medidainfo;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 }
 
-.pequeña {
+.imgPequeña2 {
+    @include medidainfo;
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+.imgPequeña {
+    @include medidainfo;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
