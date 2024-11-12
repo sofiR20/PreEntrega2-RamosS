@@ -74,40 +74,73 @@
 /*MAIN PRODUCTOS*/
 .productosGrid {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 600px 400px;
+  grid-template-columns: repeat(3, 400px); /* 3 columnas del mismo tamaño */
+  grid-template-rows: 600px 400px; /* 2 filas automáticas */
   grid-template-areas: "imgFun . imgCua" "imgInd imgLla imgLla";
-  gap: 15px;
+  gap: 15px; /* Espacio entre elementos */
   justify-content: center;
   margin-top: 100px;
   position: relative;
 }
-.productosGrid .imgFun:hover, .productosGrid .imgCua:hover {
+
+.imgFun {
   grid-area: imgFun;
   width: 400px;
   height: 600px;
-  transform: rotate(30deg);
 }
-.productosGrid .imgCua:hover {
+
+.imgCua {
   grid-area: imgCua;
-  transform: rotate(-30deg);
+  width: 400px;
+  height: 600px;
 }
-.productosGrid .imgInd {
+
+.imgInd {
   grid-area: imgInd;
   width: 400px;
   height: 400px;
 }
-.productosGrid .imgLla {
+
+.imgLla {
   grid-area: imgLla;
   width: 815px;
   height: 400px;
 }
-.productosGrid .imgFun:hover,
-.productosGrid .imgCua:hover,
-.productosGrid .imgLla:hover,
-.productosGrid .imgInd:hover {
+
+.imgFun:hover, .imgCua:hover, .imgLla:hover, .imgInd:hover {
   box-shadow: 10px 10px rgb(255, 123, 0);
   transition: 1s;
+}
+
+/* Agregar en style.css */
+.product-image {
+  background-color: #eee;
+  width: 100%;
+  padding-bottom: 100%; /* Mantiene la imagen cuadrada */
+  position: relative;
+}
+
+.list-group-item.active a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  border: none;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
 /*MAIN PREGUNTAS FRECUENTES*/
@@ -437,6 +470,36 @@
     height: 250px;
   }
 }
+/*Responsive grilla de Productos*/
+@media (max-width: 1225px) {
+  .productosGrid {
+    height: auto;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 600px 400px;
+    grid-template-areas: " . imgFun " "imgInd imgCua" "imgLla imgLla";
+  }
+  .imgCua {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .productosGrid {
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 600px 400px;
+    grid-template-areas: " . imgFun " "imgInd imgCua" "imgLla imgLla";
+  }
+  .imgLla {
+    width: auto;
+    height: auto;
+  }
+  .imgProd {
+    height: 600px;
+    width: auto;
+  }
+}
 /*Responsive grilla de index Naruto*/
 @media (max-width: 1000px) {
   .img2 {
@@ -517,6 +580,44 @@
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
+  }
+}
+/*RESPONSIVO REDES Y CONTACTO*/
+@media (max-width: 768px) {
+  #mainRedes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario-contacto {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0;
+  }
+  .informacion-derecha {
+    width: 100%;
+    padding-left: 0;
+  }
+  .titulo-redes {
+    font-size: 30px;
+    text-align: center;
+  }
+  .lista-redes {
+    margin-top: 20px;
+  }
+  .lista-redes li {
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
+  }
+  .lista-redes img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .lista-redes a {
+    font-size: 16px;
+    text-align: center;
   }
 }
 

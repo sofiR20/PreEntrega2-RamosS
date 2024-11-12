@@ -1,50 +1,66 @@
 /*MAIN PRODUCTOS*/
 .productosGrid {
     display: grid;
-    grid-template-columns: repeat(3, 400px); // 3 columnas del mismo tamaño
-    grid-template-rows: 600px 400px; // 2 filas automáticas
+    grid-template-columns: repeat(3, 400px); /* 3 columnas del mismo tamaño */
+    grid-template-rows: 600px 400px; /* 2 filas automáticas */
     grid-template-areas: 
-        "imgFun . imgCua"
-        "imgInd imgLla imgLla";
-    gap: 15px; // Espacio entre elementos
+    "imgFun . imgCua"
+    "imgInd imgLla imgLla";
+    gap: 15px; /* Espacio entre elementos */
     justify-content: center;
     margin-top: 100px;
     position: relative;
-
-    .imgFun:hover {
-        grid-area: imgFun;
-        width: 400px;
-        height: 600px;
-        transform: rotate(30deg);
-    }
-
-    .imgCua:hover {
-        grid-area: imgCua;
-        transform: rotate(-30deg);
-        @extend .imgFun
-    }
-
-    .imgInd {
-        grid-area: imgInd;
-        width: 400px;
-        height: 400px;
-    }
-
-    .imgLla {
-        grid-area: imgLla;
-        width: 815px;
-        height: 400px;
-    }
-
-    .imgFun:hover, 
-    .imgCua:hover, 
-    .imgLla:hover, 
-    .imgInd:hover {
-        box-shadow: 10px 10px $color-principal;
-        transition: 1s;
-    }
+}
+.imgFun {
+    grid-area: imgFun;
+    width: 400px;
+    height: 600px;
+}
+.imgCua {
+    grid-area: imgCua;
+    width: 400px;
+    height: 600px;
+}
+.imgInd {
+    grid-area: imgInd;
+    width: 400px;
+    height: 400px;
+}
+.imgLla {
+    grid-area: imgLla;
+    width: 815px;
+    height: 400px;
+}
+.imgFun:hover , .imgCua:hover , .imgLla:hover , .imgInd:hover{
+    box-shadow: 10px 10px $color-principal;
+    transition: 1s;
 }
 
+/* Agregar en style.css */
+.product-image {
+    background-color: #eee;
+    width: 100%;
+    padding-bottom: 100%; /* Mantiene la imagen cuadrada */
+    position: relative;
+}
+.list-group-item.active a {
+    color: white;
+    text-decoration: none;
+}
+.card {
+    border: none;
+}
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
 /*MAIN PREGUNTAS FRECUENTES*/
 .pregFrec {
     flex-wrap: wrap;
