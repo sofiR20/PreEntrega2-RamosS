@@ -139,6 +139,9 @@
     font-family: Arial, sans-serif;
     gap: 20px;
 }
+.titulo-formulario {
+    font-family: "Pacifico";
+}
 .formulario-contacto {
     max-width: 400px; // Ancho máximo
     margin: 20px auto; // Margen superior de 20px, centrado horizontalmente
@@ -191,6 +194,7 @@
 
 .titulo-redes {
     font-size: 40px;
+    font-family: "Pacifico";
     font-weight: Georgia;
     text-align: left; /* Centrar título */
 }
@@ -211,8 +215,9 @@
         a {
             text-decoration: none;
             font-weight: bold;
+            font-family: "Bebas Neue";
             color: #000;
-            font-size: 18px; /* Agrandamos el tamaño del texto para destacar */
+            font-size: 20px; /* Agrandamos el tamaño del texto para destacar */
         }
         a:hover {
             text-decoration: underline;
@@ -258,16 +263,19 @@
 
 /* Estilos de Texto */
 .productos-grid h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
+    font-family: "Pacifico";
     color: #333;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    text-shadow: 7px 7px $color-secundario;
 }
 
 .descripcion {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: "Comic Neue";
     color: #000000;
     text-align: justify;
     margin-top: 1rem;
