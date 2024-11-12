@@ -82,6 +82,37 @@
         "imgLla imgLla";
     }
 
+    .imgFun {
+        object-fit: cover;
+        width: 600;
+        height: 600;
+        
+    }
+    .imgLla {
+        width: auto;
+        height: auto;
+        position: relative; /* Cambia a relativo para que se mueva con el flujo del documento */
+    }
+    .imgProd {
+        height: 600px;
+        width: auto;
+        position: relative; /* Cambia a relativo para que se mueva con el flujo del documento */
+    }
+}
+
+@media (max-width:420px) {
+    .productosGrid {
+        width: auto;
+        height: auto;
+         object-fit: contain; /* Asegura que la imagen no se deforme */
+        grid-template-columns: repeat(2, 150px); // 3 columnas del mismo tamaño
+        grid-template-rows: 600px 400px; // 2 filas automáticas
+        grid-template-areas: 
+        " . imgFun "
+        "imgInd imgCua"
+        "imgLla imgLla";
+    }
+
     .imgLla {
         width: auto;
         height: auto;
