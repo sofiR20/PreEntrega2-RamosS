@@ -90,6 +90,7 @@
             border: 2px solid #333; // Borde exterior
             border-radius: 5px; // Bordes redondeados
             background-color: white; // Fondo blanco para el contenedor
+            
 
             .item-pregunta {
                 background-color: #f9f9f9; // Color de fondo para cada fila
@@ -106,6 +107,7 @@
                 a {
                     text-decoration: none;
                     color: inherit; 
+                    font-family: "Croissant One"
                 }
             }
         }
@@ -117,9 +119,11 @@
 
         .respuesta {
             margin-bottom: 20px; 
+            font-family: "Croissant One"
 
             p {
                 margin: 5px 0 0; 
+                font-family: "Croissant One"
             }
         }
     }

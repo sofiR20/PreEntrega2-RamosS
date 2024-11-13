@@ -187,6 +187,7 @@
 .faq-container .faq-preguntas .lista-preguntas .item-pregunta a {
   text-decoration: none;
   color: inherit;
+  font-family: "Croissant One";
 }
 .faq-container .faq-respuestas {
   flex: 2;
@@ -194,9 +195,9 @@
 }
 .faq-container .faq-respuestas .respuesta {
   margin-bottom: 20px;
-}
-.faq-container .faq-respuestas .respuesta p {
-  margin: 5px 0 0;
+  font-family: "Croissant One" p;
+  font-family-margin: 5px 0 0;
+  font-family-font-family: "Croissant One";
 }
 
 /*MAIN REDES Y CONTACTO*/
