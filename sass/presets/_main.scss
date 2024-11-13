@@ -80,6 +80,7 @@
     .faq-preguntas {
         flex: 1; // Ocupa espacio en la columna izquierda
         margin-right: 20px; // Espacio entre las preguntas y las respuestas
+        
 
         .lista-preguntas {
             display: flex;
@@ -97,6 +98,7 @@
                 color: #333; // Color del texto
                 padding: 15px; // Espaciado interno
                 border: 1px solid #ccc; // Borde interno
+                font-size: 25px;
                 border-radius: 3px; 
                 transition: background-color 0.3s; 
 
@@ -106,7 +108,7 @@
 
                 a {
                     text-decoration: none;
-                    color: inherit; 
+                    color: inherit;
                     font-family: "Croissant One"
                 }
             }
@@ -116,11 +118,14 @@
     .faq-respuestas {
         flex: 2; 
         padding: 20px; 
-
+        h2 {
+            font-family: "Croissant One"
+        }
+        h4 {
+            font-family: "Comic Neue"
+        }
         .respuesta {
             margin-bottom: 20px; 
-            font-family: "Croissant One"
-
             p {
                 margin: 5px 0 0; 
                 font-family: "Croissant One"
@@ -197,10 +202,14 @@
 }
 
 .titulo-redes {
-    font-size: 40px;
-    font-family: "Pacifico";
+    font-size: 60px;
+    font-family: "Bebas Neue";
     font-weight: Georgia;
     text-align: left; /* Centrar título */
+}
+
+.seccion-contacto {
+    margin-left: 250px;
 }
 
 .lista-redes {
@@ -221,7 +230,7 @@
             font-weight: bold;
             font-family: "Bebas Neue";
             color: #000;
-            font-size: 20px; /* Agrandamos el tamaño del texto para destacar */
+            font-size: 35px; /* Agrandamos el tamaño del texto para destacar */
         }
         a:hover {
             text-decoration: underline;
